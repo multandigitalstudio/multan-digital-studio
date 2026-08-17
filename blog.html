@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog | Multan Digital Studio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .blog-header {
+            background: #050505;
+            padding: 25px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .blog-logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .blog-logo span {
+            color: #ffb000;
+        }
+
+        .blog-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .blog-nav a:hover {
+            color: #ffb000;
+        }
+
+        /* Hero */
+        .blog-hero {
+            background: #050505;
+            color: white;
+            text-align: center;
+            padding: 80px 6%;
+        }
+
+        .demo-badge {
+            display: inline-block;
+            border: 1px solid #ffb000;
+            color: #ffb000;
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .blog-hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .blog-hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #cccccc;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 70px 6%;
+        }
+
+        .blog-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        /* Blog Card */
+        .blog-card {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .blog-category {
+            color: #ffb000;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blog-card h2 {
+            font-size: 25px;
+            margin: 12px 0;
+        }
+
+        .blog-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: #050505;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            color: #ffb000;
+        }
+
+        /* Footer */
+        .blog-footer {
+            background: #050505;
+            color: #cccccc;
+            text-align: center;
+            padding: 30px 6%;
+            margin-top: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .blog-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .blog-nav a {
+                margin: 0 8px;
+            }
+
+            .blog-hero h1 {
+                font-size: 36px;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="blog-header">
+
+        <div class="blog-logo">
+            MULTAN <span>DIGITAL STUDIO</span>
+        </div>
+
+        <nav class="blog-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+
+        <div class="demo-badge">
+            DEMO PROJECT
+        </div>
+
+        <h1>Our Blog</h1>
+
+        <p>
+            Insights, ideas and useful tips about websites,
+            SEO, digital marketing and e-commerce.
+        </p>
+
+    </section>
+
+
+    <!-- Blog Posts -->
+    <section class="blog-section">
+
+        <div class="blog-container">
+
+            <div class="blog-grid">
+
+                <!-- Blog 1 -->
+                <article class="blog-card">
+
+                    <div class="blog-category">
+                        Web Design
+                    </div>
+
+                    <h2>
+                        5 Things Every Business Website Should Have
+                    </h2>
+
+                    <p>
+                        Learn the essential features that can make
+                        a business website professional, useful and
+                        user-friendly.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More →
+                    </a>
+
+                </article>
+
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+
+                    <div class="blog-category">
+                        SEO
+                    </div>
+
+                    <h2>
+                        Simple SEO Tips to Improve Your Website
+                    </h2>
+
+                    <p>
+                        Discover basic SEO practices that can help
+                        search engines understand your website better.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More →
+                    </a>
+
+                </article>
+
+
+                <!-- Blog 3 -->
+                <article class="blog-card">
+
+                    <div class="blog-category">
+                        Digital Marketing
+                    </div>
+
+                    <h2>
+                        Why Every Business Needs an Online Presence
+                    </h2>
+
+                    <p>
+                        Learn why a strong website and digital presence
+                        can help businesses reach more potential customers.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More →
+                    </a>
+
+                </article>
+
+
+                <!-- Blog 4 -->
+                <article class="blog-card">
+
+                    <div class="blog-category">
+                        E-Commerce
+                    </div>
+
+                    <h2>
+                        What Makes a Good Online Store?
+                    </h2>
+
+                    <p>
+                        Explore important elements of a user-friendly
+                        and professional e-commerce website.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+
+        <p>
+            © 2026 Multan Digital Studio — Demo Project
+        </p>
+
+    </footer>
+
+</body>
+</html>
